@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ebf5fb;
+    color: #333;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #1e3a5f;
+    margin-bottom: 30px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+}
+
+.card {
+    background: #ffffff;
+    width: 260px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 4px;
+}
+
+.role {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #1a56db;
+    margin-bottom: 12px;
+}
+
+.desc {
+    font-size: 0.78rem;
+    line-height: 1.4;
+    color: #555;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.view-btn {
+    background-color: #1a56db;
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.view-btn:hover {
+    background-color: #1442a6;
+}
+
+/* Profile page specific */
+.profile-card {
+    max-width: 480px;
+    margin-top: 20px;
+}
+.profile-card img {
+    height: 320px;
+}
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #1a56db;
+    text-decoration: none;
+    font-weight: 600;
+}
